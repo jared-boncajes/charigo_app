@@ -1,0 +1,30 @@
+/* All artwork positions and sizes are measured from the supplied Figma file. */
+@font-face{font-family:Inter;src:url('../assets/fonts/inter-latin-variable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#ededed}
+body{font-family:Inter,sans-serif}
+.app-shell{position:relative;width:min(100%,390px);height:100dvh;margin:0 auto;overflow:hidden;background:#fff}
+.phone-scroll{height:100%;overflow-x:hidden;overflow-y:auto;scrollbar-width:none}
+.phone-scroll::-webkit-scrollbar{display:none}
+.screen{position:relative;width:390px;min-height:844px;background:#fff;isolation:isolate}
+.fig-node{z-index:1;position:absolute;left:0;top:0;transform-origin:0 0;pointer-events:none}
+.art{position:absolute;inset:0;width:100%;height:100%;overflow:visible;user-select:none}
+.fig-node>svg{position:absolute;left:0;top:0;overflow:visible}
+.hotspot{z-index:0;position:absolute;inset:0;display:block;width:100%;height:100%;border:0;padding:0;margin:0;background:transparent;color:transparent;cursor:pointer;pointer-events:auto;text-decoration:none;font:inherit}
+.hotspot:focus-visible{outline:2px solid #03541c;outline-offset:2px}
+.bottom-dock{position:absolute;left:0;bottom:-28px;width:390px;height:87px;z-index:20;pointer-events:none}
+.bottom-dock>.fig-node{transform:none!important}
+.demo-field{position:absolute;z-index:10;border:0;outline:0;background:transparent;padding:0 12px;color:#111;font:400 14px Inter,sans-serif;line-height:1.25;box-shadow:none;border-radius:8px;resize:none;pointer-events:auto}
+.demo-field:not(:focus):not(.has-value){color:transparent;caret-color:#111}
+.demo-field[type=file]{opacity:0;cursor:pointer}
+.demo-field[type=checkbox]{appearance:none;padding:0;cursor:pointer}
+.demo-field:focus-visible{outline:1px solid #fa709a;outline-offset:-2px}
+.source-text.input-placeholder-hidden{visibility:hidden}
+.fig-node.demo-hidden{visibility:hidden}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media(max-width:389px){.screen,.bottom-dock{zoom:calc(100vw / 390px)}
+.bottom-dock{bottom:calc(-28 * 100vw / 390)}
+}
+

@@ -1,0 +1,63 @@
+{
+  "pages": 90,
+  "identical_initial_views": 45,
+  "differences": [],
+  "errors": [],
+  "broken_images": [],
+  "responsive": [
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "shellWidth": 320,
+      "shellX": 0,
+      "navTop": 791.46875,
+      "scrollHeight": 844,
+      "viewportHeight": 844
+    },
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "shellWidth": 360,
+      "shellX": 0,
+      "navTop": 787.546875,
+      "scrollHeight": 844,
+      "viewportHeight": 844
+    },
+    {
+      "width": 375,
+      "documentWidth": 375,
+      "shellWidth": 375,
+      "shellX": 0,
+      "navTop": 786.234375,
+      "scrollHeight": 844,
+      "viewportHeight": 844
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "shellWidth": 390,
+      "shellX": 0,
+      "navTop": 785,
+      "scrollHeight": 855,
+      "viewportHeight": 844
+    },
+    {
+      "width": 430,
+      "documentWidth": 430,
+      "shellWidth": 390,
+      "shellX": 20,
+      "navTop": 785,
+      "scrollHeight": 855,
+      "viewportHeight": 844
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1280,
+      "shellWidth": 390,
+      "shellX": 445,
+      "navTop": 785,
+      "scrollHeight": 855,
+      "viewportHeight": 844
+    }
+  ]
+}
